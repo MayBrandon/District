@@ -103,157 +103,67 @@ header {
     display: none;
 }
 
-/* PARTIE BODY  */
-/* DIV PRESENTATION */
-.div-presentation {
-    padding: 50px;
-    background-color: rgba(175, 143, 102, 0.694);
-    margin: 50px;
-}
-
-.titre-presentation {
-    font-size: 3.2em;
-    font-family: 'Dancing Script', cursive;
-    color: white;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
-
-.text-presentation {
-    color: white;
-    font-size: 1.5em;
-}
-
-.span-txt {
-    font-weight: 700;
-    text-decoration: underline;
-}
-
-.div-text {
-    padding: 50px;
-    margin: 50px;
-    background-color: rgba(175, 143, 102, 0.694);
-}
-
-.text {
-    color: white;
-}
-
-.div-text > .text > .span-txt {
-    font-size: 1.5em;
-    color: white;
-}
-
-#slide { 
-    width: 100%;
-    transition:0.3s ease-in-out;
-
-}
-#slide:hover { 
-    overflow: hidden;
-    transform: scale(1.012);
-}
-
-#slider {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: 10px 10px 10px 10px;
-    filter: brightness(0.7);
-    overflow: hidden;
-    transition:0.3s ease-in-out;
-}
-
-
-#slider:hover {
-    filter: brightness(1);
-}
-
-#precedent, #suivant {
-    position: absolute;
-    font-size: 50px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.802);
-    color: white;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-#slider:hover #precedent ,
-#slider:hover #suivant  {
-    opacity: 1;
-}
-
-#precedent {
-    left: 0;
-}
-
-#suivant {
-    right: 0;
-}
-
-.div-titre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    color: white;
-    width: 350px;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.594);
-}
-
-.titre-categorie {
-    display: flex;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    font-weight: 500;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-}
-
-.text {
-    font-size: 1.5em;
-}
-
-/* div plat */
-.div-plat {
-    text-align: center;
-}
+/* -------------------------------- */
 
 .titre-plat {
     text-align: center;
+    font-size: 4em;
     color: white;
-    font-size: 55px;
-    margin: 25px 0;
+    font-family: 'Dancing Script', cursive;
+    margin: 25px;
+} 
 
-}
-
-.div-plat-img::-webkit-scrollbar {
-    display: none;
-}
-.div-plat-img {
+.div-body-block {
     display: flex;
-    overflow-x: scroll;
-    gap: 25px;
-    margin: 25px ;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.img-plat {
-    width: 400px;
-    filter: brightness(0.7);
-    transition: .3s ease-in-out;
+
+.div-block {
+    display: flex;
+    background-color: rgba(175, 143, 102, 0.694);
+    width: 900px;
+    gap: 15px;
+    margin: 20px;
+    position: relative;
 }
 
-.img-plat:hover {
-    filter: brightness(1);
-}²
+.plat-text {
+    margin: 15px;
+}
+
+.plat-description {
+    margin: 15px;
+    color: white;
+}
+
+.btn-panier {
+    position: absolute;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    font-size: 15px;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.precedent, .suivant {
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
 
 /* footer */
 .separateur-footer {
@@ -356,28 +266,4 @@ footer {
     #searchBar {
         display: none;
     }
-
-    .img-responsive {
-        display: block;
-        width: 100%;
-    }
-
-    .div-presentation {
-        padding: 30px;
-        margin: 30px;
-    }
-
-    .div-text {
-        padding: 30px;
-        margin: 30px;
-    }
 }
-
-
-/* PAGE PLATS */
-
-.div-block {
-    display: flex;
-}
-
-
