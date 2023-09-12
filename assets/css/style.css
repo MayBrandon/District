@@ -129,11 +129,11 @@ header {
     text-decoration: underline;
 }
 
-    .div-text {
-        padding: 50px;
-        margin: 50px;
-        background-color: rgba(175, 143, 102, 0.694);
-    }
+.div-text {
+    padding: 50px;
+    margin: 50px;
+    background-color: rgba(175, 143, 102, 0.694);
+}
 
 .text {
     color: white;
@@ -215,6 +215,7 @@ header {
     text-decoration: none;
     font-weight: 500;
     text-align: center;
+    font-family: 'Dancing Script', cursive;
 }
 
 .text {
