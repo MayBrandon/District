@@ -129,11 +129,11 @@ header {
     text-decoration: underline;
 }
 
-.div-text {
-    padding: 50px;
-    margin: 50px;
-    background-color: rgba(175, 143, 102, 0.694);
-}
+    .div-text {
+        padding: 50px;
+        margin: 50px;
+        background-color: rgba(175, 143, 102, 0.694);
+    }
 
 .text {
     color: white;
