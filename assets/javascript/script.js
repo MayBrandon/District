@@ -38,10 +38,9 @@ function changeSlide(sens) {
 
 setInterval("changeSlide(1)", 6000);
 
+
+
 //FIL SLIDE
-
-
-
 const container = document.querySelector('#div-plat-img');
                 
 let startY;
