@@ -30,6 +30,10 @@
                 <a class="lien-menu"
                 href="">Contact</a>
             </li>
+            <li class="li-menu">
+                <a class="lien-menu"
+                href="../../panier.html">panier</a>
+            </li>
         </ul>
 
         <div class="hamburger">
@@ -176,7 +180,7 @@
                     <img class="test-size" src="/assets/img/img-categorie/categorie-pizza/pexels-andre.png" alt="">
                 </div>
                 <div class="plat-description">
-                    <h1 class="plat-titre">titre du plat</h1>
+                    <h1 class="plat-titre">Pizza - Andre</h1>
     
                     <p class="plat-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quasi nihil enim iste hic, eveniet liberodi maiores, vero similique adipisci, fugit harum sequi! Architecto cumque, consequuntur numquam dolor repellendus dignissimos mollitia. Dolor tenetur delectus cupiditate maiores debitis, corporis ex voluptatibus cum! Omnis natus nobis itaque aut quod quia sit soluta, doloremque ea corrupti voluptatum ipsum illo laudantium maiores nulla dolor mollitia quibusdam odit culpa molestias libero error veritatis voluptatem! In et maiores velit molestiae, animi similique! Maxime laboriosam dignissimos saepe 
@@ -275,7 +279,7 @@
                     <img class="test-size" src="/assets/img/img-categorie/categorie-pates/pates-truffes.png" alt="">
                 </div>
                 <div class="plat-description">
-                    <h1 class="plat-titre">titre du plat</h1>
+                    <h1 class="plat-titre">Pates au Truffes</h1>
     
                     <p class="plat-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quasi nihil enim iste hic, eveniet liberodi maiores, vero similique adipisci, fugit harum sequi! Architecto cumque, consequuntur numquam dolor repellendus dignissimos mollitia. Dolor tenetur delectus cupiditate maiores debitis, corporis ex voluptatibus cum! Omnis natus nobis itaque aut quod quia sit soluta, doloremque ea corrupti voluptatum ipsum illo laudantium maiores nulla dolor mollitia quibusdam odit culpa molestias libero error veritatis voluptatem! In et maiores velit molestiae, animi similique! Maxime laboriosam dignissimos saepe 
@@ -332,7 +336,7 @@
                     <img class="test-size" src="/assets/img/img-categorie/categorie-salade/salades-olena.png" alt="">
                 </div>
                 <div class="plat-description">
-                    <h1 class="plat-titre">titre du plat</h1>
+                    <h1 class="plat-titre">Salade - Olena</h1>
     
                     <p class="plat-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quasi nihil enim iste hic, eveniet liberodi maiores, vero similique adipisci, fugit harum sequi! Architecto cumque, consequuntur numquam dolor repellendus dignissimos mollitia. Dolor tenetur delectus cupiditate maiores debitis, corporis ex voluptatibus cum! Omnis natus nobis itaque aut quod quia sit soluta, doloremque ea corrupti voluptatum ipsum illo laudantium maiores nulla dolor mollitia quibusdam odit culpa molestias libero error veritatis voluptatem! In et maiores velit molestiae, animi similique! Maxime laboriosam dignissimos saepe 
@@ -442,7 +446,7 @@
             <div class="pinterest"><img class="social-logo" src="/assets/img/social/pinterest.png" alt=""></div>
         </div>
     </footer>
-    <script src="/assets/javascript/script.js"></script>
+    <!-- <script src="/assets/javascript/script.js"></script> -->
     <script>
         function ajoutPanier(idProduit) {
             let produit = {
@@ -573,7 +577,19 @@
                 produit.description = "sandwich - Torobekov";
                 produit.prix = 10.00;
             }
+
+            let panier = JSON.parse(sessionStorage.getItem("panier")) || [];
+            panier.push(produit);
+            sessionStorage.setItem("panier", JSON.stringify(panier));
+
         }
+
+      function afficherPanier() {
+        window.location.href = "../../../panier.html";
+        console.log("je suis entré ici");
+      }
+
+
     </script>
 </body>
 </html>

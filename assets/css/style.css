@@ -380,4 +380,45 @@ footer {
     display: flex;
 }
 
+/* PAGE PANIER */
+
+.div-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div-titre-panier {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: underline;
+    margin: 25px;
+}
+
+.titre-panier {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+}
+
+.div-panier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(175, 143, 102, 0.694);
+    color: white;
+    margin: 25px 50px;
+    padding: 25px 50px;
+    gap: 50px;
+}
+
+.btn-reset {
+    border: none;
+    background-color: black;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
 
