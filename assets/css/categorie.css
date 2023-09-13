@@ -207,7 +207,7 @@ footer {
 
 @media screen and (max-width: 821px) { /* RESOLUTION TABLETTE */
     /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
-    
+
     header {
         display: flex;
         justify-content: space-around;
@@ -296,4 +296,7 @@ footer {
         margin-top: 10px;
         position: relative;
     }
+
+   
+
 }
