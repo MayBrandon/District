@@ -229,6 +229,11 @@ footer {
     width: 40px;
 }
 
+.cart-svg {
+    width: 25px;
+    color: white;
+}
+
 
 @media screen and (max-width: 700px) { /* RESOLUTION TABLETTE */
     /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
