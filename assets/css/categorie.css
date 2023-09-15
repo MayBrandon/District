@@ -135,6 +135,10 @@ header {
     margin: 20px;
     background-color: rgba(175, 143, 102, 0.694);
     width: 80%;
+    transition: ease-in-out .2s;
+}
+.div-categorie:hover {
+    transform: scale(1.01);
 }
 
 .img-categorie {
@@ -202,6 +206,11 @@ footer {
 
 .social-logo{
     width: 40px;
+}
+
+.cart-svg {
+    width: 25px;
+    color: white;
 }
 
 

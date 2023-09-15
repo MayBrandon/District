@@ -230,8 +230,9 @@ header {
 .titre-plat {
     text-align: center;
     color: white;
-    font-size: 55px;
+    font-size: 3.5em;
     margin: 25px 0;
+    font-family: 'Dancing Script', cursive;
 
 }
 
@@ -297,6 +298,28 @@ footer {
     width: 40px;
 }
 
+.cart-svg {
+    width: 25px;
+    color: white;
+}
+
+.titre-maps {
+    text-align: center;
+    font-size: 3.4em;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+.div-maps {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(175, 143, 102, 0.694);
+    margin: 25px 0;
+}
+.maps {
+    width: 100%;
+    margin: 25px;
+    border-radius: 25px ;
+}
 
 @media screen and (max-width: 700px) { /* RESOLUTION TABLETTE */
     /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
