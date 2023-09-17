@@ -138,8 +138,9 @@ header {
 
 .div-block {
     display: flex;
+    flex-wrap: nowrap;
     background-color: rgba(175, 143, 102, 0.694);
-    width: 900px;
+    width: 1000px;
     margin: 10px;
     gap: 15px;
     position: relative;
@@ -149,12 +150,16 @@ header {
     transform: scale(1.01);
 }
 
+.div-plat-img {
+    float: left;
+}
+
 .plat-text {
+    gap: 10px;
     margin: 15px;
 }
 
 .plat-description {
-    margin: 15px;
     color: white;
 }
 
@@ -308,14 +313,35 @@ footer {
         display: none;
     }
 
+    .div-body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .div-body-block {
         display: flex;
         justify-content: center;
     }
 
+    .lien-plat {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        text-decoration: none;
+    }
+
     .div-block {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .div-plat-img {
+        float: none;
+        display: flex;
         justify-content: center;
     }
 
