@@ -458,6 +458,8 @@ footer {
 .div-form {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 form {
@@ -486,10 +488,13 @@ input {
     border-radius: 5px;
     border: none;
     margin-top: 5px;
-    width: 350px;
+    width: 35vw;
 }
 
 /* NOM */
+.div-nom-prenom {
+    display: flex;
+}
 
 .div-nom {
     display: flex;
@@ -503,7 +508,9 @@ input {
 }
 
 /* EMAIL */
-
+.div-email-num {
+    display: flex;
+}
 .div-email {
     display: flex;
     flex-direction: column;
@@ -526,6 +533,7 @@ input {
     color: white;
     text-align: center;
     font-size: 1.5em;
+    flex-wrap: wrap;
 }
 
 /* MESSAGE TEXTAREA */
@@ -543,7 +551,7 @@ input {
 }
 
 #message {
-    width: 720px;
+    width: 72vw;
     border: none;
     border-radius: 5px;
     padding: 10px;
