@@ -85,27 +85,7 @@
                 prix: 0
             };
 
-            if (idProduit === 1) {
-                produit.image = "/assets/img/img-categorie/categorie-ramen/ramen-saumon.png";
-                produit.nom = "Ramen au Thon";
-                produit.description = "Ramen au thon narvalo";
-                produit.prix = 10.00;
-            } else if (idProduit === 2) {
-                produit.image = "/assets/img/img-categorie/categorie-ramen/ramen-boeuf.png";
-                produit.nom = "Ramen au boeuf";
-                produit.description = "Ramen au boeuf narvalo";
-                produit.prix = 10.00;
-            } else if (idProduit === 3) {
-                produit.image = "/assets/img/img-categorie/categorie-ramen/ramen-poulet.png";
-                produit.nom = "Ramen au poulet";
-                produit.description = "Ramen au poulet narvalo";
-                produit.prix = 10.00;
-            } else if (idProduit === 4) {
-                produit.image = "/assets/img/img-categorie/categorie-ramen/ramen.png";
-                produit.nom = "Ramen";
-                produit.description = "Ramen";
-                produit.prix = 10.00;
-            } else if (idProduit === 5) {
+            if (idProduit === 5) {
                 produit.image = "/assets/img/img-categorie/categorie-burger/burger-horizon.png";
                 produit.nom = "Burger - Horizon";
                 produit.description = "Burger - Horizon";
@@ -125,87 +105,7 @@
                 produit.nom = "Burger - Voltneva";
                 produit.description = "Burger - Voltneva";
                 produit.prix = 10.00;
-            } else if (idProduit === 9) {
-                produit.image = "/assets/img/img-categorie/categorie-pizza/pexels-andre.png";
-                produit.nom = "Pizza - Andre";
-                produit.description = "Pizza - Andre";
-                produit.prix = 10.00;
-            } else if (idProduit === 10) {
-                produit.image = "/assets/img/img-categorie/categorie-pizza/piza-rene.png";
-                produit.nom = "Pizza - Rene";
-                produit.description = "Pizza - Rene";
-                produit.prix = 10.00;
-            } else if (idProduit === 11) {
-                produit.image = "/assets/img/img-categorie/categorie-pizza/pizza-kristina.png";
-                produit.nom = "Pizza - Kristina";
-                produit.description = "Pizza - Kristina";
-                produit.prix = 10.00;
-            } else if (idProduit === 12) {
-                produit.image = "/assets/img/img-categorie/categorie-pizza/pizza-savoyarde.png";
-                produit.nom = "Pizza - Savoyarde";
-                produit.description = "Pizza - Savoyarde";
-                produit.prix = 10.00;
-            } else if (idProduit === 13) {
-                produit.image = "/assets/img/img-categorie/categorie-pates/pates-darya.png";
-                produit.nom = "Pates Tomates";
-                produit.description = "Pates Tomates";
-                produit.prix = 10.00;
-            } else if (idProduit === 14) {
-                produit.image = "/assets/img/img-categorie/categorie-pates/pates-eneida.png";
-                produit.nom = "Pates - Carbo";
-                produit.description = "Pates - Carbo";
-                produit.prix = 10.00;
-            } else if (idProduit === 15) {
-                produit.image = "/assets/img/img-categorie/categorie-pates/pates-polina.png";
-                produit.nom = "Pates crevettes";
-                produit.description = "Pates crevettes";
-                produit.prix = 10.00;
-            } else if (idProduit === 16) {
-                produit.image = "/assets/img/img-categorie/categorie-pates/pates-truffes.png";
-                produit.nom = "Pates au Truffes";
-                produit.description = "Pates au Truffes";
-                produit.prix = 10.00;
-            } else if (idProduit === 17) {
-                produit.image = "/assets/img/img-categorie/categorie-salade/salade-badness.png";
-                produit.nom = "Salade - Badness";
-                produit.description = "Salade - Badness";
-                produit.prix = 10.00;
-            } else if (idProduit === 18) {
-                produit.image = "/assets/img/img-categorie/categorie-salade/salade-tranmautritam.png";
-                produit.nom = "Salade - Tranmautritam";
-                produit.description = "Salade - Tranmautritam";
-                produit.prix = 10.00;
-            } else if (idProduit === 19) {
-                produit.image = "/assets/img/img-categorie/categorie-salade/salade-valeria.png";
-                produit.nom = "Salade - Valeria";
-                produit.description = "Salade - Valeria";
-                produit.prix = 10.00;
-            } else if (idProduit === 20) {
-                produit.image = "/assets/img/img-categorie/categorie-salade/salades-olena.png";
-                produit.nom = "Salade - Olena";
-                produit.description = "Salade - Olena";
-                produit.prix = 10.00;
-            } else if (idProduit === 21) {
-                produit.image = "/assets/img/img-categorie/categorie-sandwich/sandwich-anna.png";
-                produit.nom = "sandwich - Ana";
-                produit.description = "sandwich - Ana";
-                produit.prix = 10.00;
-            } else if (idProduit === 22) {
-                produit.image = "/assets/img/img-categorie/categorie-sandwich/sandwich-daniel.png";
-                produit.nom = "sandwich - Daniel";
-                produit.description = "sandwich - Daniel";
-                produit.prix = 10.00;
-            } else if (idProduit === 23) {
-                produit.image = "/assets/img/img-categorie/categorie-sandwich/sandwich-rajesh.png";
-                produit.nom = "sandwich - Rajesh";
-                produit.descriptio = "sandwich - Rajesh";
-                produit.prix = 10.00;
-            } else if (idProduit === 24) {
-                produit.image = "/assets/img/img-categorie/categorie-sandwich/sandwich-torobekov.png";
-                produit.nom = "sandwich - Torobekov";
-                produit.description = "sandwich - Torobekov";
-                produit.prix = 10.00;
-            }
+            } 
 
             let panier = JSON.parse(sessionStorage.getItem("panier")) || [];
             panier.push(produit);

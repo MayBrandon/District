@@ -25,7 +25,6 @@
     <div class="div-body">
         
         <div class="div-body-block">
-            <a class="lien-plat"  href="/pages/pages-categorie/categories-plats/pates/pages-pates/pates-crevette.php">
                 <div class="div-block">
                     <div class="div-plat-img">
                         <img class="test-size" src="/assets/img/img-categorie/categorie-pates/pates-polina.png" alt="">
@@ -36,10 +35,9 @@
                         <p class="plat-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quasi nihil enim iste hic, eveniet libero maiores, vero similique adipisci, fugit harum sequi! Architecto cumque, consequuntur numquam dolor repellendus dignissimos mollitia. Dolor tenetur delectus cupiditate maiores debitis, corporis ex voluptatibus cum! Omnis natus nobis itaque aut quod quia sit soluta, doloremque ea corrupti voluptatum ipsum illo laudantium maiores nulla dolor mollitia quibusdam odit culpa molestias libero error veritatis voluptatem! In et maiores velit molestiae, animi similique! Maxime laboriosam dignissimos saepe 
                         </p>
-                        <button class="btn-panier" id="ajoutPanier">Ajouter au Panier</button>
+                        <button class="btn-panier" onclick="ajoutPanier(15)">Ajouter au Panier</button>
                     </div>
                 </div>
-            </a>
         </div>
     </div>
     <hr class="separateur-footer">
@@ -85,5 +83,49 @@
         </div>
     </footer>
     <script src="/assets/javascript/script.js"></script>
+    <script>
+        function ajoutPanier(idProduit) {
+            let produit = {
+                image: "",
+                nom: "",
+                description: "",
+                prix: 0
+            };
+
+             if (idProduit === 13) {
+                produit.image = "/assets/img/img-categorie/categorie-pates/pates-darya.png";
+                produit.nom = "Pates Tomates";
+                produit.description = "Pates Tomates";
+                produit.prix = 10.00;
+            } else if (idProduit === 14) {
+                produit.image = "/assets/img/img-categorie/categorie-pates/pates-eneida.png";
+                produit.nom = "Pates - Carbo";
+                produit.description = "Pates - Carbo";
+                produit.prix = 10.00;
+            } else if (idProduit === 15) {
+                produit.image = "/assets/img/img-categorie/categorie-pates/pates-polina.png";
+                produit.nom = "Pates crevettes";
+                produit.description = "Pates crevettes";
+                produit.prix = 10.00;
+            } else if (idProduit === 16) {
+                produit.image = "/assets/img/img-categorie/categorie-pates/pates-truffes.png";
+                produit.nom = "Pates au Truffes";
+                produit.description = "Pates au Truffes";
+                produit.prix = 10.00;
+            } 
+
+            let panier = JSON.parse(sessionStorage.getItem("panier")) || [];
+            panier.push(produit);
+            sessionStorage.setItem("panier", JSON.stringify(panier));
+
+        }
+
+      function afficherPanier() {
+        window.location.href = "../../../panier.php";
+        console.log("je suis entré ici");
+      }
+
+
+    </script>
 </body>
 </html>

@@ -16,16 +16,18 @@
           <source src="/assets/video/video-burger.mp4" type="">
         </video>
     </div>
-
-    <div class="div-block">
-        <div class="div-plat-img">
-            <img class="test-size" src="/assets/img/img-categorie/categorie-burger/burger-valeria.png" alt="">
-        </div>
-        <div class="plat-description">
-            <h1 class="plat-titre">Burger - Valeria</h1>
-            <p class="plat-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quasi nihil enim iste hic, eveniet libero maiores, vero similique adipisci, fugit harum sequi! Architecto cumque, consequuntur numquam dolor repellendus dignissimos mollitia. Dolor tenetur delectus cupiditate maiores debitis, corporis ex voluptatibus cum! Omnis natus nobis itaque aut quod quia sit soluta, doloremque ea corrupti voluptatum ipsum illo laudantium maiores nulla dolor mollitia quibusdam odit culpa molestias libero error veritatis voluptatem! In et maiores velit molestiae, animi similique! Maxime laboriosam dignissimos saepe 
-            </p>
+    <div class="div-body-block">
+        <div class="div-block">
+            <div class="div-plat-img">
+                <img class="test-size" src="/assets/img/img-categorie/categorie-burger/burger-valeria.png" alt="">
+            </div>
+            <div class="plat-description">
+                <h1 class="plat-titre">Burger - Valeria</h1>
+                <p class="plat-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quasi nihil enim iste hic, eveniet libero maiores, vero similique adipisci, fugit harum sequi! Architecto cumque, consequuntur numquam dolor repellendus dignissimos mollitia. Dolor tenetur delectus cupiditate maiores debitis, corporis ex voluptatibus cum! Omnis natus nobis itaque aut quod quia sit soluta, doloremque ea corrupti voluptatum ipsum illo laudantium maiores nulla dolor mollitia quibusdam odit culpa molestias libero error veritatis voluptatem! In et maiores velit molestiae, animi similique! Maxime laboriosam dignissimos saepe 
+                </p>
+            </div>
+            <button class="btn-panier" onclick="ajoutPanier(6)">Ajouter au Panier</button>
         </div>
     </div>
 
@@ -101,7 +103,7 @@
                 produit.nom = "Burger - Voltneva";
                 produit.description = "Burger - Voltneva";
                 produit.prix = 10.00;
-            }
+            } 
 
             let panier = JSON.parse(sessionStorage.getItem("panier")) || [];
             panier.push(produit);

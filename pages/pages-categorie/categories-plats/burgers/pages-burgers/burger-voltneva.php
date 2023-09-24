@@ -85,27 +85,27 @@
                 prix: 0
             };
 
-            if (idProduit === 1) {
-                produit.image = "/assets/img/img-categorie/categorie-ramen/ramen-saumon.png";
-                produit.nom = "Ramen au Thon";
-                produit.description = "Ramen au thon narvalo";
+            if (idProduit === 5) {
+                produit.image = "/assets/img/img-categorie/categorie-burger/burger-horizon.png";
+                produit.nom = "Burger - Horizon";
+                produit.description = "Burger - Horizon";
                 produit.prix = 10.00;
-            } else if (idProduit === 2) {
-                produit.image = "/assets/img/img-categorie/categorie-ramen/ramen-boeuf.png";
-                produit.nom = "Ramen au boeuf";
-                produit.description = "Ramen au boeuf narvalo";
+            } else if (idProduit === 6) {
+                produit.image = "/assets/img/img-categorie/categorie-burger/burger-valeria.png";
+                produit.nom = "Burger - Valeria";
+                produit.description = "Burger - Valeria";
                 produit.prix = 10.00;
-            } else if (idProduit === 3) {
-                produit.image = "/assets/img/img-categorie/categorie-ramen/ramen-poulet.png";
-                produit.nom = "Ramen au poulet";
-                produit.description = "Ramen au poulet narvalo";
+            } else if (idProduit === 7) {
+                produit.image = "/assets/img/img-categorie/categorie-burger/burger-vilnis.png";
+                produit.nom = "Burger - Vilnis";
+                produit.description = "Burger - Vilnis";
                 produit.prix = 10.00;
-            } else if (idProduit === 4) {
-                produit.image = "/assets/img/img-categorie/categorie-ramen/ramen.png";
-                produit.nom = "Ramen";
-                produit.description = "Ramen";
+            } else if (idProduit === 8) {
+                produit.image = "/assets/img/img-categorie/categorie-burger/burger-voltneva.png";
+                produit.nom = "Burger - Voltneva";
+                produit.description = "Burger - Voltneva";
                 produit.prix = 10.00;
-            }
+            } 
 
             let panier = JSON.parse(sessionStorage.getItem("panier")) || [];
             panier.push(produit);
