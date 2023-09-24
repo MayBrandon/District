@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/categorie.css">
     <link rel="shortcut icon" href="/assets/img/branding/favicon.ico" type="image/x-icon">
-    <title>The District - Accueil</title>
+    <title>The District - Categorie</title>
 </head>
 <body>
     <header>

@@ -7,6 +7,7 @@
     <title>Commande</title>
 </head>
 <body>
-    <?php include("header-footer-php/header.php") ?>
+<!-- HEADER  -->
+<?php include('header-footer-php/header.php') ?>
 </body>
 </html>

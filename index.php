@@ -8,44 +8,9 @@
     <title>The District - Accueil</title>
 </head>
 <body>
-    <header>
-    <!-- DEBUT MENU DEROULANT POUR TABLETTE ET MOBILE ET PC -->
-    <nav id="nav-bar">
-        <div class="div-logo">
-            <img class="logo-district" src="/assets/img/branding/logo-district.png" alt="">
-        </div>
-        <ul class="nav-menu">
-            <li class="li-menu">
-                <a class="lien-menu"
-                href="/../../../index.php">Accueil</a>
-            </li>
-            <li class="li-menu">
-                <a class="lien-menu"
-                href="/pages/pages-categorie/categorie.html">Catégories</a>
-            </li>
-            <li class="li-menu">
-                <a class="lien-menu"
-                href="/pages/pages-plats/plats-1.html">Plats</a>
-            </li>
-            <li class="li-menu">
-                <a class="lien-menu"
-                href="/contact.html">Contact</a>
-            </li>
-            <li class="li-menu">
-                <a class="lien-menu"
-                href="/../../panier.html"><img class="cart-svg" src="/assets/img/img-plat-accueil/shopping-cart-outline-svgrepo-com.svg" alt="">
-            </a>
-            </li>
-        </ul>
 
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-    <!--  FIN MENU DEROULANT POUR TABLETTE ET MOBILE -->
-    </header>
+<!-- HEADER  -->
+<?php include('header-footer-php/header.php') ?>
 
     <!-- PARALAX AVEC BARRE DE RECHERCHE -->
     <div class="parallax">
@@ -69,7 +34,7 @@
         </div>
         <div id="slider">
             <div class="div-titre">
-                <h1 class="titre-categorie"><a class="titre-categorie" href="/pages/pages-categorie/categorie.html">Nos catégories</a></h1>
+                <h1 class="titre-categorie"><a class="titre-categorie" href="/pages/pages-categorie/categorie.php">Nos catégories</a></h1>
             </div>
              <img class="img-plat" src="/assets/img/img-plat-accueil/oeufs.png" id="slide" alt="">
 
@@ -85,32 +50,32 @@
             <h1 class="titre-plat">Nos plats</h1>
             <div class="div-plat-img" id="div-plat-img">
                 <div class="div-img">
-                    <a href="/pages/pages-categorie/categories-plats/salades/pages-salades/salade-valeria.html">
+                    <a href="/pages/pages-categorie/categories-plats/salades/pages-salades/salade-valeria.php">
                         <img class="img-plat" src="/assets/img/img-categorie/categorie-salade/salade-valeria.png" alt="Salade Valeria">
                     </a>
                 </div>
                 <div class="div-img">
-                    <a href="/pages/pages-categorie/categories-plats/ramens/pages-ramen/ramen-poulet.html">
+                    <a href="/pages/pages-categorie/categories-plats/ramens/pages-ramen/ramen-poulet.php">
                         <img class="img-plat" src="/assets/img/img-categorie/categorie-ramen/ramen-poulet.png" alt="Ramen au poulet">
                     </a>
                 </div>
                 <div class="div-img">
-                    <a href="/pages/pages-categorie/categories-plats/burgers/pages-burgers/burger-valeria.html">
+                    <a href="/pages/pages-categorie/categories-plats/burgers/pages-burgers/burger-valeria.php">
                         <img class="img-plat" src="/assets/img/img-categorie/categorie-burger/burger-valeria.png" alt="Burger de Valeria">
                     </a>
                 </div>
                 <div class="div-img">
-                    <a href="/pages/pages-categorie/categories-plats/pates/pages-pates/pates-truffes.html">
+                    <a href="/pages/pages-categorie/categories-plats/pates/pages-pates/pates-truffes.php">
                         <img class="img-plat" src="/assets/img/img-categorie/categorie-pates/pates-truffes.png" alt="Pates au Truffes">
                     </a>
                 </div>
                 <div class="div-img">
-                    <a href="/pages/pages-categorie/categories-plats/pizzas/pages-pizza/pizza-savoyarde.html"></a>
+                    <a href="/pages/pages-categorie/categories-plats/pizzas/pages-pizza/pizza-savoyarde.php"></a>
                         <img class="img-plat" src="/assets/img/img-categorie/categorie-pizza/pizza-savoyarde.png" alt="Pizza savoyarde">
                     </a>
                 </div>
                 <div class="div-img">
-                    <a href="/pages/pages-categorie/categories-plats/sandwich/pages-sandwich/sandwich-daniel.html">
+                    <a href="/pages/pages-categorie/categories-plats/sandwich/pages-sandwich/sandwich-daniel.php">
                         <img class="img-plat" src="/assets/img/img-categorie/categorie-sandwich/sandwich-daniel.png" alt="Dandwich Daniels">
                     </a>
                 </div>
