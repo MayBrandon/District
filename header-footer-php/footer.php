@@ -5,22 +5,22 @@
                 <h4 class="footer-title">Nos catégories :</h4>
                 <ul class="categorie-liste">
                     <li>
-                        <a class="categorie-li" href="#">Asiatique</a>
+                    <a class="categorie-li" href="/pages/pages-categorie/categories-plats/ramens/categorie-ramen.php">Asiatique</a>
                     </li>
                     <li>
-                        <a class="categorie-li" href="#">Hamburger</a>
+                        <a class="categorie-li" href="/pages/pages-categorie/categories-plats/burgers/categorie-burger.php">Hamburger</a>
                     </li>
                     <li>
-                        <a class="categorie-li" href="#">Pizza</a>
+                        <a class="categorie-li" href="/pages/pages-categorie/categories-plats/pizzas/categorie-pizza.php">Pizza</a>
                     </li>
                     <li>
-                        <a class="categorie-li" href="#">Pasta</a>
+                        <a class="categorie-li" href="/pages/pages-categorie/categories-plats/pates/categorie-pates.php">Pasta</a>
                     </li>
                     <li>
-                        <a class="categorie-li" href="#">Salade</a>
+                        <a class="categorie-li" href="/pages/pages-categorie/categories-plats/salades/categorie-salades.php">Salade</a>
                     </li>
                     <li>
-                        <a class="categorie-li" href="#">Sandwich</a>
+                        <a class="categorie-li" href="/pages/pages-categorie/categories-plats/sandwich/categorie-sandwich.php">Sandwich</a>
                     </li>
                 </ul>
             </div>

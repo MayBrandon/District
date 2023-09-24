@@ -45,7 +45,7 @@
                 <h4 class="footer-title">Nos catégories :</h4>
                 <ul class="categorie-liste">
                     <li>
-                        <a class="categorie-li" href="#">Asiatique</a>
+                        <a class="categorie-li" href="">Asiatique</a>
                     </li>
                     <li>
                         <a class="categorie-li" href="#">Hamburger</a>
