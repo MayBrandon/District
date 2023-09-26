@@ -1,29 +1,34 @@
 <?php
+// Vérifiez si le formulaire a été soumis
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérez les données du formulaire
+    $prenom = $_POST["prenom"];
+    $nom = $_POST["nom"];
+    $email = $_POST["email"];
+    $num = $_POST["num"];
+    $message = $_POST["message"];
+    $separate = "--------------------------------";
+    $nbr = 0;
+    // Concaténez les données en une seule chaîne
+    $data = $separate."\n" .
+            "Prénom : " . $prenom . "\n" .
+            "Nom : " . $nom . "\n" .
+            "Email : " . $email . "\n" .
+            "Téléphone : " . $num . "\n" .
+            "Message : " . $message . "\n";
 
-$prenom = $_POST['prenom'];
-$nom = $_POST['nom'];
-$mail = $_POST['email'];
-$phone = $_POST['num'];
-$message = $_POST['message'];
+            // Ouvrez le fichier en écriture (ou création s'il n'existe pas)
+    $fp = fopen("formulaire-contact.txt", "a");
 
-if (!preg_match("/^[a-zA-Z]+$/", $prenom)) {
-    echo "Prenom non valide. Utiliser uniquement des lettres alphabétiques.";
+    // Écrivez les données dans le fichier
+    fputs($fp, $data);
+
+    // Fermez le fichier
+    fclose($fp);
+
+    // Redirigez l'utilisateur vers une page de confirmation ou une autre page de votre choix
+    header("Location: formulaire_envoyer.php");
+    exit();
 }
-
-if (!preg_match("/^[a-zA-Z]+$/", $nom)) {
-    echo "Nom non valide. Utiliser uniquement des lettres alphabétiques.";
-}
-
-if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "Adresse mail non valide.";
-}
-
-if (preg_match("/^[0-9]{10}$/", $phone)){
-    echo "Numero de téléphone non valide";
-    exit;
-}
-
-
-
 
 ?>

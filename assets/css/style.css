@@ -80,7 +80,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height: 400px;
+    height: 350px;
     width: 100%;
     box-shadow: inset 0px 0px 20px 0px black;
 }
@@ -578,3 +578,43 @@ input {
     background-color: rgba(255, 255, 255, 0.373);
 }
 
+
+/* PAGE FORMULAIRE ENVOYER */
+
+.div-body-contact {
+    display: grid;
+    margin: 50px;
+    gap: 25px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.text-form {
+    text-align: center;
+    /* font-family: 'Dancing Script', cursive; */
+    color: white;
+    font-size: 2em;
+    gap: 50px;
+}
+
+.div-contact {
+    padding: 25px;
+    background-color: burlywood;
+    font-size: 1.5em;
+}
+
+.fiche-contact {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.coor-titre {
+    font-weight: 700;
+    color: white;
+}
+
+.info-coor {
+    color: white;
+}

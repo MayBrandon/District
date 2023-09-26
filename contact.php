@@ -11,6 +11,7 @@
 <body>
     <!-- HEADER  -->
 <?php include('header-footer-php/header.php') ?>
+
      <!-- PARALAX AVEC BARRE DE RECHERCHE -->
      <div class="parallax">
         <input type="search" name="" id="searchBar" placeholder="Recherchez votre plat">
@@ -19,7 +20,8 @@
     <div class="div-body">
         <br>
         <h1 class="contact-titre">Contact</h1>
-        <form action="" method="post">
+
+        <form action="traitement.php" method="post">
             <div class="div-form">
                 <div class="div-nom-prenom">
                     <div class="div-prenom">
@@ -50,6 +52,7 @@
                 <button id="btnSubmit" type="submit">Envoyez</button>
             </div>
         </form>
+        
     </div>
     <hr>
     <br>
@@ -57,6 +60,7 @@
     <div class="div-maps">
         <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.866289449807!2d2.2736665032812593!3d49.9282304996199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e786b33e3719cf%3A0x5fca6cfbcc69e662!2sAFPA%20-%20Centre%20de%20Amiens!5e0!3m2!1sfr!2sfr!4v1694762133861!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
     <hr class="separateur-footer">
     <?php include('header-footer-php/header.php') ?>
 
