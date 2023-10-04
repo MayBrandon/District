@@ -7,7 +7,7 @@
         <ul class="nav-menu">
             <li class="li-menu">
                 <a class="lien-menu"
-                href="/../../../index.php">Accueil</a>
+                href="/../../../indexa.php">Accueil</a>
             </li>
             <li class="li-menu">
                 <a class="lien-menu"
@@ -24,6 +24,11 @@
             <li class="li-menu">
                 <a class="lien-menu"
                 href="/../../panier.php"><img class="cart-svg" src="/assets/img/img-plat-accueil/shopping-cart-outline-svgrepo-com.svg" alt="">
+            </a>
+            </li>
+            <li class="li-menu">
+                <a class="lien-menu"
+                href="/../../pre-index.php"><img class="cart-svg" src="/assets/img/img-plat-accueil/account.svg" alt="">
             </a>
             </li>
         </ul>

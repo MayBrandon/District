@@ -279,12 +279,21 @@ footer {
 .footer-title {
     color: white;
     text-decoration: underline;
-    line-height: 35px;
+    font-size: 2em;
+}
+
+.categorie-liste {
+    list-style-type: disc;
+    color: white;
 }
 
 .categorie-li {
     line-height: 20px;
     text-decoration: none;
+    color: white;
+}
+
+.info-footer {
     color: white;
 }
 
@@ -551,7 +560,7 @@ input {
 }
 
 #message {
-    width: 72vw;
+    width: 71vw;
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -560,8 +569,9 @@ input {
 
 .div-btn {
     display: flex;
-    justify-content: center;
-    margin: 15px;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
 }
 
 #btnSubmit {
@@ -577,7 +587,6 @@ input {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.373);
 }
-
 
 /* PAGE FORMULAIRE ENVOYER */
 
@@ -617,4 +626,58 @@ input {
 
 .info-coor {
     color: white;
+}
+
+
+
+/* PAGE CONNEXION */
+
+.div-form-connexion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.connexion {
+    display: flex;
+    flex-direction: column;
+}
+
+/* PAGE INSCRIPTION */
+
+.login-form {
+    display: flex;
+    justify-content: center;
+}
+
+/* h2 */
+.text-center {
+    color: white;
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    margin: 15px;
+}
+
+.btn-inscription {
+    text-align: center;
+    text-decoration: none;
+    width: 10%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    transition: ease-in-out .2s;
+    margin-top: 10px;
+}
+
+.btn-inscription:hover  {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.373);
 }
