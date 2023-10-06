@@ -32,7 +32,7 @@
 
 
     <hr class="separateur-footer">
-    <?php include('header-footer-php/header.php') ?>
+    <?php include('header-footer-php/footer.php') ?>
 
     <!-- <script src="/assets/javascript/script.js"></script> -->
     <script src="/assets/javascript/script.js"></script>

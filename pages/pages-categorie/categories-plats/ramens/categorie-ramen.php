@@ -24,7 +24,8 @@
             <h1 class="titre-plat">Nos Ramens : </h1>
         </div>
         <div class="div-body-block">
-            <a class="lien-plat" href="/pages/pages-categorie/categories-plats/ramens/pages-ramen/ramen-thon.php">
+        <?php
+        ?>
                 <div class="div-block">
                     <div class="div-plat-img">
                         <img class="test-size" src="/assets/img/img-categorie/categorie-ramen/ramen-saumon.png" alt="">

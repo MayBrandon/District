@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="div-btn">
-                <button id="btnSubmit" type="submit">Envoyez</button>
+                <button id="btnSubmit" type="submit">Connexion</button>
             </div>
             <div class="div-btn">
                 <p>Vous n'êtes pas inscrit ? inscrivez vous !</p>

@@ -213,6 +213,56 @@ footer {
     color: white;
 }
 
+/* footer */
+.separateur-footer {
+    border: black;
+}
+
+footer {
+    background-color: rgba(175, 143, 102, 0.694);
+    bottom: 0;
+}
+
+/* DIV FOOTER */
+.div-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* CATEGORIE BLOCK */
+.categorie-block {
+    padding: 15px;
+}
+
+.footer-title {
+    color: white;
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.categorie-liste {
+    list-style-type: disc;
+    color: white;
+}
+
+.categorie-li {
+    line-height: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.info-footer {
+    color: white;
+}
+
+.social-block {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-logo{
+    width: 40px;
+}
 
 @media screen and (max-width: 821px) { /* RESOLUTION TABLETTE */
     /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/

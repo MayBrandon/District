@@ -63,18 +63,21 @@
                                 <strong>Erreur</strong> pseudo trop long
                             </div>
                         <?php 
+                        break;
+
                         case 'already':
                         ?>
                             <div class="alert alert-danger">
                                 <strong>Erreur</strong> compte deja existant
                             </div>
                         <?php 
+                        break;
                     }
                 }
                 ?>
 
             <form action="inscription_traitement.php" method="post">
-                <h2 class="text-center">Inscription</h2>       
+                <h2 class="text-center">Inscription</h2>
                 <div class="form-group">
                     <input type="text" name="pseudo" class="form-control" placeholder="Pseudo" required="required" autocomplete="off">
                 </div>
@@ -89,7 +92,7 @@
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn-inscription">Inscription</button>
-                </div>   
+                </div>  
             </form>
         </div><hr>
     <br>
@@ -99,7 +102,7 @@
     </div>
 
     <hr class="separateur-footer">
-    <?php include('header-footer-php/header.php') ?>
+    <?php include('header-footer-php/footer.php') ?>
 
     <script src="/assets/javascript/script.js"></script>
 </body>

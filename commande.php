@@ -10,6 +10,6 @@
 <!-- HEADER  -->
 <?php include('header-footer-php/header.php') ?>
 
-<?php include('header-footer-php/header.php') ?>
+<?php include('header-footer-php/footer.php') ?>
 </body>
 </html>
