@@ -7,16 +7,15 @@
         // Patch XSS
         $email = htmlspecialchars($_POST['email']); 
         $password = htmlspecialchars($_POST['password']);
-        
+
         $email = strtolower($email); // email transformé en minuscule
-        
+
         // On regarde si l'utilisateur est inscrit dans la table utilisateurs
         $check = $bdd->prepare('SELECT pseudo, email, password, id FROM utilisateurs WHERE email = ?');
         $check->execute(array($email));
         $data = $check->fetch();
         $row = $check->rowCount();
-        
-        
+
 
         // Si > à 0 alors l'utilisateur existe
         if($row > 0)
@@ -31,7 +30,7 @@
                     $_SESSION['user'] = $data['id'];
                     header('Location: landing.php');
                     die();
-                }else{ header('Location: indexa.php?login_err=password'); die(); }
-            }else{ header('Location: indexa.php?login_err=email'); die(); }
-        }else{ header('Location: indexa.php?login_err=already'); die(); }
-    }else{ header('Location: indexa.php'); die();} // si le formulaire est envoyé sans aucune données
+                }else{ header('Location: pre-index.php?login_err=password'); die(); }
+            }else{ header('Location: pre-index.php?login_err=email'); die(); }
+        }else{ header('Location: pre-index.php?login_err=already'); die(); }
+    }else{ header('Location: pre-index.php'); die();} // si le formulaire est envoyé sans aucune données

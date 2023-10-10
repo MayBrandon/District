@@ -17,7 +17,7 @@
         $row = $check->rowCount();
 
         $email = strtolower($email); // on transforme toute les lettres majuscule en minuscule pour éviter que Foo@gmail.com et foo@gmail.com soient deux compte différents ..
-        
+
         // Si la requete renvoie un 0 alors l'utilisateur n'existe pas 
         if($row == 0){ 
             if(strlen($pseudo) <= 100){ // On verifie que la longueur du pseudo <= 100
@@ -28,7 +28,7 @@
                             // On hash le mot de passe avec Bcrypt, via un coût de 12
                             $cost = ['cost' => 12];
                             $password = password_hash($password, PASSWORD_BCRYPT, $cost);
-                            
+
                             // On stock l'adresse IP
                             $ip = $_SERVER['REMOTE_ADDR']; 
                              /*

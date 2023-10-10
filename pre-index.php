@@ -1,3 +1,7 @@
+<?php
+require '../../deconnexion.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,7 +23,7 @@
     <div class="div-body">
         <br>
         <h1 class="contact-titre">Connexion</h1>
-        <?php 
+        <?php
                 if(isset($_GET['login_err']))
                 {
                     $err = htmlspecialchars($_GET['login_err']);
@@ -28,30 +32,30 @@
                     {
                         case 'password':
                         ?>
-                            <div class="alert alert-danger">
-                                <strong>Erreur</strong> mot de passe incorrect
+                            <div>
+                                <p class="message-erreur"><strong>Erreur </strong> mot de passe incorrect</p>
                             </div>
                         <?php
                         break;
 
                         case 'email':
                         ?>
-                            <div class="alert alert-danger">
-                                <strong>Erreur</strong> email incorrect
+                            <div>
+                               <p class="message-erreur"><strong>Erreur </strong> email incorrect</p>
                             </div>
                         <?php
                         break;
 
                         case 'already':
                         ?>
-                            <div class="alert alert-danger">
-                                <strong>Erreur</strong> compte non existant
+                            <div>
+                                <p class="message-erreur">Compte non existant</p>
                             </div>
                         <?php
                         break;
                     }
                 }
-                ?> 
+                ?>
         <form action="connexion.php" method="post">
             <div class="div-form-connexion">
                 <div class="connexion">

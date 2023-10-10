@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,7 +8,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="/assets/javascript/contact.js"></script>
     <title>The District - Contact</title>
-</head>
+</head> 
 <body>
     <!-- HEADER  -->
 <?php include('header-footer-php/header.php') ?>
@@ -52,7 +53,7 @@
                 <button id="btnSubmit" type="submit">Envoyez</button>
             </div>
         </form>
-        
+
     </div>
     <hr>
     <br>

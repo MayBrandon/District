@@ -54,6 +54,7 @@ header {
     gap: 60px;
 }
 
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -674,9 +675,20 @@ input {
     background-color: white;
     transition: ease-in-out .2s;
     margin-top: 10px;
+    color: black;
 }
 
 .btn-inscription:hover  {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.373);
+}
+
+
+/* PAGE PRE INDEX.PHP */
+
+.message-erreur {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: red;
 }
